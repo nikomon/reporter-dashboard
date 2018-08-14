@@ -503,10 +503,7 @@ class App extends Component {
               url = `https://api.giosg.com/api/reporting/v1/rooms/84e0fefa-5675-11e7-a349-00163efdd8db/chat-stats/daily/?start_date=${start}&end_date=${end}`;
 
         fetch(url, {
-            method: "GET", // *GET, POST, PUT, DELETE, etc.
-            mode: "no-cors", // no-cors, cors, *same-origin
-            cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-            credentials: "same-origin", // include, same-origin, *omit
+            method: "GET",
             headers: {
                 "Content-Type": "application/json; charset=utf-8",
                 'Authorization': `Token ${AccessToken}`
