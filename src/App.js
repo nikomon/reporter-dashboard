@@ -511,13 +511,11 @@ class App extends Component {
         .then(response => console.log(response));
   }
   validateField(id, value){
-      console.log(value.length);
     switch(id){
         case 'AccessTokenInput':
             if(value.length === 40){
                 this.setState({AccessToken: value})
                 if(this.state.startDate && this.state.endDate){
-                    console.log('Fetch data');
                     this.fetchData();
                 } 
             } else {
