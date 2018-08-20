@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import DataPicker from 'react-datepicker';
 
 class StartEndDate extends Component{
     handleChange(e){
